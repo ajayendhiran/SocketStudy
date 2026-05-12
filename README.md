@@ -53,6 +53,12 @@ Socket programming finds applications in various domains, including web developm
 4.	Networked Games: Online multiplayer games rely on socket programming to facilitate communication between game clients and servers.
 5.	RPC mechanisms: which allow processes to execute code on a remote server, often use socket programming for communication.
 
+## Functions:
+socket(): Creates a new endpoint for communication. It returns a socket descriptor (a file descriptor in Unix) used in subsequent calls.
+bind(): Associates a socket with a specific local address (IP address and port number). This is primarily used by servers to "own" a port.
+listen(): Puts the server socket in a passive mode where it waits for incoming connection requests from clients.connect(): Used by a client to initiate a connection to a remote server's address and port.
+accept(): Used by a server to establish a connection with a client. It blocks until a connection arrives and then returns a new socket descriptor specifically for that connection.
+close() / closesocket(): Terminates the connection and releases the resources associated with the socket descriptor.
 
 ## Result:
 Thus the study of Socket Programming Completed Successfully
