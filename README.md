@@ -55,9 +55,13 @@ Socket programming finds applications in various domains, including web developm
 
 ## Functions:
 socket(): Creates a new endpoint for communication. It returns a socket descriptor (a file descriptor in Unix) used in subsequent calls.
+
 bind(): Associates a socket with a specific local address (IP address and port number). This is primarily used by servers to "own" a port.
+
 listen(): Puts the server socket in a passive mode where it waits for incoming connection requests from clients.connect(): Used by a client to initiate a connection to a remote server's address and port.
+
 accept(): Used by a server to establish a connection with a client. It blocks until a connection arrives and then returns a new socket descriptor specifically for that connection.
+
 close() / closesocket(): Terminates the connection and releases the resources associated with the socket descriptor.
 
 ## Result:
